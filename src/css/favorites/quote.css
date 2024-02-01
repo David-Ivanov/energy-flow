@@ -77,7 +77,8 @@
 .inform {
     position: relative;
     height: 272px;
-
+    border-radius: 50px;
+    background: #FFF;
 }
 
 .inform-wrapper {
@@ -209,7 +210,12 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 14
         height: 302px;
         margin-bottom: 16px;
     }
+    .inform {
+        
+        width: 352px;
+        
 
+    }
     .container-quote {
         padding: 64px;
         margin: 0;
@@ -225,6 +231,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 14
         margin: 0;
     }
 
+    
     .quote-background-image {
         min-width: 352px;
         height: 302px;

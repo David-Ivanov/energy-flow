@@ -213,10 +213,7 @@
 
  }
 
- .quote-background-wrapper {
-    border-radius: 30px;
-background: #FFF;
- }
+
 
 @media screen and (min-width: 768px) {
     .favorites-container {
@@ -288,6 +285,10 @@ background: #FFF;
     .workout-list {
         gap: 28px 20px;
       }
-        
+      .inform {
+        width: 352px;
+      }
+      
+
 }
 
