@@ -34,17 +34,18 @@ form.addEventListener('submit', async function (e) {
       showSend();
     } else {
       showSubscribed();
-
-      // showError();
     }
   } catch (error) {
     showError();
+  } finally {
+    form.reset();
   }
 });
 
 function showSend() {
   iziToast.info({
     title: 'Info',
+    position: 'center',
     message:
       "We're excited to have you on board! 🎉 Thank you for subscribing to new exercises on Energy Flow. You've just taken a significant step towards improving your fitness and well-being.",
   });
@@ -53,6 +54,7 @@ function showSend() {
 function showError() {
   iziToast.error({
     title: 'Error',
+    position: 'center',
     message:
       'Sorry, there was an error sending your address. Please try again!',
   });
@@ -61,6 +63,7 @@ function showError() {
 function showSubscribed() {
   iziToast.info({
     title: 'Info',
+    position: 'center',
     message: 'Its okay, you are already subscribed : ) ',
   });
 }
