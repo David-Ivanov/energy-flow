@@ -29,7 +29,6 @@ form.addEventListener('submit', async function (e) {
     );
 
     if (subscribe.ok) {
-      console.log(subscribe);
       form.reset();
       showSend();
     } else {
