@@ -52,12 +52,15 @@ function onFiltersBtnClick(e) {
   query = button.textContent;
   exList.addEventListener('click', onCardClick);
   filterExercises(query).then(({ data: { results, totalPages, page } }) => {
+
     exList.innerHTML = '';
     exList.insertAdjacentHTML('beforeend', renderFilterItems(results));
 
-    renderPagBtn(totalPages, page);
+
 
     exForm.classList.add('visually-hidden');
+    renderPagBtn(totalPages, page);
+    exPagination.classList.remove('visually-hidden');
   });
 }
 
