@@ -156,19 +156,21 @@
   border-radius: 50%;
   border: solid 1px black; */
   background-color: transparent;
+
+  cursor: pointer;
 }
 
-.is-active {
-  color: var(--light-accent-color);
-  background-color: #7e847f;
-}
-
-.active-pag-btn {
+.exercises-pagination-btn:has(input:checked) {
   color: var(--secondary-color);
   width: 31px;
   height: 32px;
   border-radius: 50%;
   border: solid 1px black;
+}
+
+.is-active {
+  color: var(--light-accent-color);
+  background-color: #7e847f;
 }
 
 .second-span {
