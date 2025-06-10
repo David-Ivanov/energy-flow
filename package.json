@@ -1,11 +1,11 @@
 {
-  "name": "goit-energy-flow",
+  "name": "energy-flow",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/goit-energy-flow/",
+    "build": "vite build --base=/energy-flow/",
     "preview": "vite preview"
   },
   "devDependencies": {
